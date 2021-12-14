@@ -1,5 +1,5 @@
 export const getRoll = () => {
-  return Array.from({ length: 5 }, () => Math.floor(Math.random() * 6));
+  return Array.from({ length: 5 }, () => Math.ceil(Math.random() * 6));
 };
 
 export default getRoll;

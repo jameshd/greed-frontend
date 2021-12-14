@@ -12,20 +12,20 @@ const styles = {
     padding: "1em",
     background: "rgb(206,220,231)" /* Old browsers */,
     background:
-      "-moz-linear-gradient(-45deg,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%);" /* FF3.6-15 */,
+      "-moz-linear-gradient(-45deg,  rgba(206,220,231,1) 0%, rgba(89,106,114,1) 100%)" /* FF3.6-15 */,
     background:
-      "-webkit-linear-gradient(-45deg,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%);" /* Chrome10-25,Safari5.1-6 */,
+      "-webkit-linear-gradient(-45deg,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%)" /* Chrome10-25,Safari5.1-6 */,
     background:
       "linear-gradient(135deg,  rgba(206,220,231,1) 0%,rgba(89,106,114,1) 100%)" /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */,
     filter:
-      "progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 );",
+      "progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedce7', endColorstr='#596a72',GradientType=1 )",
   },
 };
 function App() {
   return (
     <Container>
       <Row>
-        <Col xs={12}>
+        <Col xs={12} sm={6}>
           <header style={styles.header}>
             <h1>
               <FontAwesomeIcon icon={faDice} className="mr-3" /> Welcome to
@@ -37,7 +37,7 @@ function App() {
             on the rules below.{" "}
           </p>
           <Row>
-            <Col xs={6}>
+            <Col xs={12} sm={6}>
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   A greed roll is scored as follows:
@@ -64,7 +64,7 @@ function App() {
 
               <Game />
             </Col>
-            <Col xs={6}>
+            <Col xs={12} sm={6}>
               <Table striped bordered>
                 <thead>
                   <tr className="">
