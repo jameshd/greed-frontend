@@ -15,7 +15,7 @@ phases:
 
   post_build:
     commands:
-      - npm test
+      - npm test -- --ci --watchAll=false
 
 artifacts:
   files:
