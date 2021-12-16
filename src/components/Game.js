@@ -15,7 +15,6 @@ const Game = function () {
           size="large"
           aria-label="Your Roll"
           aria-describedby="dice-rolls"
-          placeholder={getRoll()}
           value={roll}
           readOnly={true}
         />
